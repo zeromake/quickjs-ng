@@ -65,6 +65,11 @@ jobs:
           - { os: macos-12, configType: shared }
           - { os: macos-12, configType: asan }
           - { os: macos-12, configType: ubsan }
+
+          - { os: windows-latest, configType: Debug }
+          - { os: windows-latest, configType: Release }
+          - { os: windows-latest, configType: examples }
+          - { os: windows-latest, configType: shared }
     steps:
       - uses: actions/checkout@v4
         with:
